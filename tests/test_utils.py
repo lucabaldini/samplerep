@@ -17,9 +17,17 @@
 # with this program; if not, write to the Free Software Foundation Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
+import numpy as np
+
 from samplerep.utils import square
 
 def test_square():
     """Unit test for the square() function.
     """
     assert square(2.) == 4.
+    assert square(-2.) == 4.
+    assert square(0.) == 0.
+    assert square(2) == 4
+    assert square(-2) == 4
+    assert square(0) == 0
+    assert np.allcose(square(np.ones(100)), np.ones(100))
