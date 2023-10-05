@@ -20,8 +20,12 @@
 """General utilities.
 """
 
+from typing import Union
 
-def square(value):
+import numpy as np
+
+
+def square(value : Union[int, float, np.ndarray]) -> Union[float, np.ndarray]:
     """Return the square of a given number.
 
     This will accept any imput that support the ** operators, including
