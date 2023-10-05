@@ -30,4 +30,4 @@ def test_square():
     assert square(2) == 4
     assert square(-2) == 4
     assert square(0) == 0
-    assert np.allcose(square(np.ones(100)), np.ones(100))
+    assert np.allclose(square(np.ones(100)), np.ones(100))
