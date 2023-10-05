@@ -17,8 +17,26 @@
 # with this program; if not, write to the Free Software Foundation Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
+"""General utilities.
+"""
 
-def square(x):
+
+def square(value):
     """Return the square of a given number.
+
+    This will accept any imput that support the ** operators, including
+    integers, floating point numbers and numpy array.
+
+    The function will raise a TypeError for incompatible types (e.g.,
+    string).
+
+    Arguments
+    ---------
+    value : number
+        The input value to square.
+
+    Return
+    ------
+        The square of the input value. : float
     """
-    return x**2.
+    return value**2.
